@@ -1,6 +1,6 @@
 # jQuery CharCode Checker
 
-JavaScript charCode Checker built using jQuery. 
+JavaScript charCode Checker built using [jQuery](https://jquery.com/). 
 Simply click the screen and type on your keyboard to see the entered key's key-id, charCode and event.code.
 
 See a working demo [here!](https://codepen.io/nootuff/full/qBbwQRp)
