@@ -1,0 +1,135 @@
+:root { 
+  --grey-color: #a8b4ba;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 100vw;
+  font-family: 'Nunito', sans-serif;
+    background-color: var(--grey-color);
+}
+
+#central-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+#container {
+  min-width: 100%;
+  height: 100vh;
+  background-color: var(--grey-color);
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#content-container{
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+  z-index: 0;
+  position: absolute;
+    top: 100px;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+  padding: 12px;
+  margin-bottom: 10px;
+    background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 90%;
+  font-size: 25px;
+}
+
+h2{
+  text-align: center;
+  z-index: 0;
+  width: 500px;
+  position: absolute;
+    top: 170px;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#demo {
+  z-index: 0;
+ position: absolute;
+    top: 300px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  width: 300px;
+  opacity: 0;
+  transition: 0.5s;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+#input {
+ width: 100%;
+ opacity: 0;
+  z-index: 999;
+height: 100%;
+  color: transparent;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: blue;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  padding-bottom: 10px;
+}
+
+footer p {
+  font-size: 15px;
+  padding: 15px;
+}
+
+/*Media queries*/
+/*Tablets or larger*/
+@media only screen and (min-width: 768px) {
+  h1 {
+    width: 60%;
+  }
+}
+
+/*Desktops or larger*/
+@media only screen and (min-width: 992px) {
+  h1 {
+    width: 40%;
+    font-size: 2em;
+    top: 40px; 
+  }
+  
+  h2 {
+    top: 150px;  
+  }
+  
+  #demo {
+    top: 300px;
+  }
+  
+  footer p {
+  font-size: 20px;
+  padding: 15px;
+}
+}
